@@ -3,10 +3,10 @@
 const PESQUISAR = "Pesquisar";
 const MARTIN = "Martin";
 const INVERTED_MARTIN = "uᴉʇɹɐW";
-const FRONT_URL = `https://${Cypress.env('GITHUB_USER_TEST')}-ft.herokuapp.com/.`
+const FRONT_URL = `https://${Cypress.env('GITHUB_USER')}-ft.herokuapp.com/.`
 const Claudia = "Claudia"
 
-describe("Verifica se foi feito o deploy do frontend no Heroku", () => {
+describe("1 - Verifica se foi feito o deploy do frontend no Heroku", () => {
   beforeEach(() => {
     cy.visit(FRONT_URL);
   });
