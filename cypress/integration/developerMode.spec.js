@@ -3,7 +3,7 @@
 const FRONT_URL = `https://${Cypress.env('GITHUB_USER_TEST')}-ft.herokuapp.com/.`
 const FRONT_URL_PROD = `https://${Cypress.env('GITHUB_USER_TEST')}-pd.herokuapp.com/.`
 
-describe("Verifica os multi-ambientes e modo de desenvolvimento", () => {
+describe("3 - Verifica os multi-ambientes e modo de desenvolvimento", () => {
   it("Será validado que a tag de desenvolvimento foi encontrada no frontend de desenvolvimento", () => {
     cy.visit(FRONT_URL);
     cy.contains("Em desenvolvimento").should("exist");
